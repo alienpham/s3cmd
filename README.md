@@ -315,6 +315,12 @@ File s3://public.s3tools.org/somefile.xml deleted
 Bucket 's3://public.s3tools.org/' removed
 ```
 
+```
+$ s3cmd --recursive modify --add-header="Cache-Control:max-age=86400" s3://yourbucket/
+
+NOTE: Add header request to objects
+```
+
 ### Hints
 
 The basic usage is as simple as described in the previous section.
